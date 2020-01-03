@@ -1,6 +1,6 @@
 # Audio-Visualizer
 
-This experiment requires the following equipment:
+This project requires the following equipment:
 - 1 Arduino
 - 1 1088AS 8x8 LED Matrix
 - 1 MAX7219 LED Matrix Driver
