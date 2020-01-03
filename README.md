@@ -1,11 +1,11 @@
 # Audio-Visualizer
 
 This experiment requires the following equipment:
-1 Arduino
-1 1088AS 8x8 LED Matrix
-1 MAX7219 LED Matrix Driver
-1 MAX9814 AdaFruit AGC Electret Microphone Amplifier
-Wire pins 
+- 1 Arduino
+- 1 1088AS 8x8 LED Matrix
+- 1 MAX7219 LED Matrix Driver
+- 1 MAX9814 AdaFruit AGC Electret Microphone Amplifier
+- Wire pins 
 
 The LED Driver assembles with the LED Matrix for the advantage of less wiring and simpler programming. The LED Driver connects to Pin 2 for the DIN connector, Pin 3 for the load connector, and Pin 4 for the clock connector. The microphone uses Pin 13 as the analog input. Each of the two devices are connected towards the LaunchPad through a ground pin and a voltage pin. The microphone requires 3.3 volts, while the LED driver requires 5 volts.
 Once after, the finishing touches to the experiment is to program the device. There are two segments of the program: configuration of the microphone and configuration of the LED. For the microphone, it records an analog from the microphone and configures the minimum and maximum sound waves based on the integer value of the analog, calculate the peak-to-peak amplitude based on the difference between the minimum and maximum, and convert the amplitude into volts by dividing the amplitude by the maximum analog (1024).
